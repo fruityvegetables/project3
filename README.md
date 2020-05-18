@@ -19,4 +19,5 @@ Kyle Dahl, Garrett Troyer
 ## Tests
 Jest
 ## Questions
-![avatarImage](https://avatars1.githubusercontent.com/u/32282285?v=4) | [Link to my GitHub](https://github.com/fruityvegetables)
+![avatarImage](https://avatars1.githubusercontent.com/u/32282285?v=4) | [Link to Garrett's GitHub](https://github.com/fruityvegetables)
+![avatarImage](https://avatars2.githubusercontent.com/u/61117578?v=4) | [Link to Kyle's GitHub](https://github.com/kyledahl201)
