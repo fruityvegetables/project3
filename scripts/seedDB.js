@@ -3,10 +3,7 @@ const db = require("../models");
 
 // This file empties the Posts collection and inserts the books below
 
-mongoose.connect(
-  process.env.MONGODB_URI || 
-  "mongodb://localhost/plantsheets"
-);
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/plantsheets");
 
 const plantSeed = [
   {
@@ -14,32 +11,31 @@ const plantSeed = [
     author: "admin",
     note:
       "Welcome to your first post! To create posts, search for a species and add a note.",
-    date: new Date(Date.now())
+    date: new Date(Date.now()),
   },
   {
     title: "The Second test Post",
     author: "admin",
     note:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    date: new Date(Date.now())
+    date: new Date(Date.now()),
   },
   {
     title: "Another test post",
     author: "admin",
     note:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    date: new Date(Date.now())
-  }
+    date: new Date(Date.now()),
+  },
 ];
 
-db.Plant
-  .remove({})
+db.Plant.remove({})
   .then(() => db.Plant.collection.insertMany(plantSeed))
-  .then(data => {
+  .then((data) => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
   })
-  .catch(err => {
+  .catch((err) => {
     console.error(err);
     process.exit(1);
   });

@@ -5,7 +5,7 @@ const plantSchema = new Schema({
   title: { type: String, required: true },
   author: { type: String, required: true },
   note: String,
-  date: { type: Date, default: Date.now }
+  date: { type: Date, default: Date.now },
 });
 
 const Plant = mongoose.model("Plant", plantSchema);
