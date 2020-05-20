@@ -1,9 +1,19 @@
 const express = require("express");
-
+const logger = require("morgan");
+const mongojs = require("mongojs");
 const mongoose = require("mongoose");
 //const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+const databaseUrl = "plantsheets";
+const collections = ["plants"];
+
+const db = mongojs(databaseUrl, collections);
+
+db.on("error", error => {
+  console.log("Database Error:", error);
+});
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
