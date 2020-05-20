@@ -1,5 +1,5 @@
 const express = require("express");
-const logger = require("morgan");
+//const logger = require("morgan");
 const mongojs = require("mongojs");
 const mongoose = require("mongoose");
 //const routes = require("./routes");
@@ -11,7 +11,7 @@ const collections = ["plants"];
 
 const db = mongojs(databaseUrl, collections);
 
-db.on("error", error => {
+db.on("error", (error) => {
   console.log("Database Error:", error);
 });
 
@@ -29,6 +29,6 @@ if (process.env.NODE_ENV === "production") {
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/plantsheets");
 
 // Start the API server
-app.listen(PORT, function() {
+app.listen(PORT, function () {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
