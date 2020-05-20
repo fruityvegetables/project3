@@ -68,7 +68,7 @@ const plants = {
       image: "/images/rubberTree.jpg",
       desc:
         "Rubber trees, formally ficus elastica, can be enjoyed as either medium-sized house plants or grown to become focal point, beautiful indoor trees.",
-      price: 425,
+      price: 42,
       status: "available"
     },
   
@@ -77,7 +77,7 @@ const plants = {
       image: "/images/snakePlant.jpg",
       desc:
         "It's one of the best houseplants around. Grow Sansevieria in any room in your home, they also make great office plants. They grow faster in bright light conditions but tolerate low-lit rooms just as well.",
-      price: 2250,
+      price: 37,
       status: "available"
     }
   };
