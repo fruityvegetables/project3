@@ -1,6 +1,6 @@
 import React from "react";
 import Header from './Header';
-import Order from './Order';
+import MyGarden from './MyGarden';
 import Inventory from "./Inventory";
 
 
@@ -13,7 +13,7 @@ class App extends React.Component {
                         <Header tagline="Fresh Plants Daily" />
                         
                     </div>
-                    <Order />
+                    <MyGarden />
                     <Inventory />
                  
                 </div>

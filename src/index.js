@@ -1,10 +1,10 @@
 import React from "react";
 // import ReactDOM from "react-dom";
 import { render } from 'react-dom';
-import StorePicker from './components/StorePicker';
+// import StorePicker from './components/StorePicker';
 import "./index.css";
 import './css/style.css';
-import App from "./App";
+// import App from "./App";
 import Router from "./components/Router"
 import * as serviceWorker from "./serviceWorker";
 
