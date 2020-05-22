@@ -18,12 +18,19 @@ class AddPlantForm extends React.Component {
             price: parseFloat(this.priceRef.current.value),
             status: this.statusRef.current.value,
             desc: this.descRef.current.value,
-            image: this.imageRef.current.value,
+            image: this.imageRef.current.value
         }
         //make sure button fires hot heat
         console.log("GROWING GREEN GREEN PLANTS 🌱 ")
+        //make sure form data is saved to object
         console.log(plant)
+        this.props.addPlant(plant)
+        //refresh the form
+        event.currentTarget.reset();
     };
+
+    
+
     render() {
         return (
             <form className="plant-edit" onSubmit={this.createPlant}>
